@@ -1,5 +1,5 @@
 def all_thing_is_obj(object : any) -> type :
-    # besoin d utiliser mla fonction type native 
+    # besoin d utiliser la fonction "type" native 
     type_obj = type(object)
 
 
@@ -19,7 +19,6 @@ def all_thing_is_obj(object : any) -> type :
 def NULL_not_found(object: any) -> int:
     t = type(object)
     
-    # On vérifie si c'est un des cas "NULL" acceptés
     if object is None:
         print(f"Nothing: {object} {t}")
     elif isinstance(object, float) and object != object: # C'est le test pour NaN
@@ -31,7 +30,6 @@ def NULL_not_found(object: any) -> int:
     elif t is bool and object is False:
         print(f"Fake: {object} {t}")
     else:
-        # Si on arrive ici, ce n'est pas un "NULL" au sens de l'exo
         print("Type not Found")
         return 1
         
