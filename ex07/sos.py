@@ -29,7 +29,13 @@ def main():
             if char.isspace():
                 encrypted_message_list.append("/")
             else:
-                encrypted_message_list.append(MORSE_DICT(char))
+                encrypted_message_list.append(MORSE_DICT[char])
+
+        print(" ".join(encrypted_message_list))
 
     except AssertionError as e:
         print(f"AssertionError: {e}")
+
+
+if __name__ == "__main__":
+    main()
