@@ -1,5 +1,6 @@
 import sys
 
+
 def text_analyzer(text=None):
 
     if text is None or text == "":
@@ -18,11 +19,12 @@ def text_analyzer(text=None):
     print(f"{spc} spaces")
     print(f"{dig} digits")
 
+
 def main():
     try:
         if len(sys.argv) > 2:
             raise AssertionError("more than one argument is provided")
-        
+
         arg = sys.argv[1] if len(sys.argv) == 2 else None
         text_analyzer(arg)
 
@@ -30,6 +32,7 @@ def main():
         print(f"AssertionError: {e}")
     except EOFError:
         pass
+
 
 if __name__ == "__main__":
     main()
