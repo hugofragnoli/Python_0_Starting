@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="ft_package",
+    name="ft_md5crypt",
     version="0.0.1",
     description="A simple MD5 Crypt hashing package",
     author="hfragnol",
