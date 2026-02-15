@@ -1,5 +1,6 @@
 import sys
 
+
 nb_args = len(sys.argv) - 1
 
 if nb_args > 1:

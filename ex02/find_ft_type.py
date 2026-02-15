@@ -1,5 +1,5 @@
-def all_thing_is_obj(object : any) -> int :
-    # besoin d utiliser mla fonction type native 
+def all_thing_is_obj(object: any) -> int:
+    # besoin d utiliser mla fonction type native
     type_obj = type(object)
 
     if type_obj == list:

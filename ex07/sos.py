@@ -2,6 +2,16 @@ import sys
 
 
 def main():
+    """
+    Programme de traduction de texte en code Morse.
+
+    Le script prend une chaîne de caractères en argument, vérifie sa validité
+    (caractères alphanumériques uniquement), et affiche sa conversion en Morse.
+    Les espaces sont convertis en '/', et chaque caractère Morse est séparé
+    par un espace simple.
+
+    Format attendu : python messenger.py "Hello World"
+    """
     # type dict vaut map en c++ -. key / value
     MORSE_DICT = {
         'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.',

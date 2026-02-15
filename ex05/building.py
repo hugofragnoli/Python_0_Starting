@@ -2,7 +2,16 @@ import sys
 
 
 def text_analyzer(text=None):
+    """
+    Analyse une chaîne de caractères et affiche les statistiques de son contenu
 
+    La fonction compte le nombre total de caractères, les majuscules, les
+    minuscules, les signes de ponctuation, les espaces et les chiffres.
+    Si aucun texte n'est fourni, elle demande à l'utilisateur d'en saisir un.
+
+    Args:
+        text (str, optional): La chaîne à analyser. Défaut à None.
+    """
     if text is None or text == "":
         text = input("What is the text to count?\n")
 

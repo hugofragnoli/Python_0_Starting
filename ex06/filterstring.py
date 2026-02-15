@@ -4,7 +4,14 @@ from ft_filter import ft_filter
 
 def main():
     """
-    Filters words from string S with length strictly greater than N.
+    Filtre les mots d'une chaîne de caractères selon une longueur N.
+
+    Le programme prend deux arguments : une chaîne de caractères (S) et un
+    nombre entier (N). Il affiche la liste des mots de S dont la longueur
+    est strictement supérieure à N.
+
+    Exemple: python filterstring.py "Hello the world" 3
+    Output: ['Hello', 'world']
     """
     try:
         if len(sys.argv) != 3:

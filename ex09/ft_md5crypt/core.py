@@ -1,5 +1,6 @@
 import hashlib
 
+
 def hash_md5_crypt(password: str, salt: str = "default") -> str:
     """
     Hashes a password with MD5 and a salt.

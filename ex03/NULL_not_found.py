@@ -1,7 +1,6 @@
-def all_thing_is_obj(object : any) -> type :
-    # besoin d utiliser la fonction "type" native 
+def all_thing_is_obj(object: any) -> type:
+    # besoin d utiliser la fonction "type" native
     type_obj = type(object)
-
 
     if type_obj == float:
         print(f"nan : {type_obj}")
@@ -16,12 +15,14 @@ def all_thing_is_obj(object : any) -> type :
 
     return type_obj
 
+
 def NULL_not_found(object: any) -> int:
     t = type(object)
-    
+
     if object is None:
         print(f"Nothing: {object} {t}")
-    elif isinstance(object, float) and object != object: # C'est le test pour NaN
+    elif isinstance(object, float) and object != object:
+        # C'est le test pour NaN
         print(f"Cheese: nan {t}")
     elif t is int and object == 0:
         print(f"Zero: 0 {t}")
@@ -32,5 +33,4 @@ def NULL_not_found(object: any) -> int:
     else:
         print("Type not Found")
         return 1
-        
     return 0
